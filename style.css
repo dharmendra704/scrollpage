@@ -1,0 +1,418 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Menu */
+header {
+	background:#FFF;
+	height:60px;
+	width:100%;
+}
+
+header.scrolled {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px;
+}
+
+header nav {
+	clear:both;
+	display: block;
+	line-height: 60px;
+	height:60px;
+	position:relative;
+}
+.logo-label{
+	text-decoration: none;
+	color: black;
+	padding-top: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.nav-menu {
+	padding-left:30px;
+	padding-right:30px;
+	
+}
+
+.nav-menu-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.grt-mobile-button {
+	display:none;
+}
+
+ul.grt-menu {
+	display: block;
+	float:right;
+	margin:0 -10px 0 0;
+	list-style-type: none;
+}
+
+ul.grt-menu li {
+	display: inline-block;
+	transition: all ease 0.8s;
+}
+
+ul.grt-menu li a {
+	padding: 5px 12px;
+	font-size:21px;
+	display: inline-block;
+	color:#303030;
+	line-height: 1.1em;
+	box-shadow: inset 0 0 0 0 #FFF;
+	transition: all ease 0.8s;
+	position:relative;
+	text-decoration: none;
+	text-transform: lowercase;
+	  font-family: 'Aclonica';font-size: 22px;
+}
+
+
+ul.grt-menu li.active a:after  {
+    position: absolute;
+    bottom: 1px;
+    left: 12px;
+    right: 12px;
+    border-bottom: 2px solid #ee2b34;
+}
+
+
+
+/* only for Desktop  */
+@media (min-width:768px) {
+	ul.grt-menu li a:hover {
+		color:#FFF;
+		box-shadow: inset 150px 0 0 0 #ee2b34;
+	}
+}
+
+/*only for Tablet  */
+@media (min-width:768px) and (max-width:991px) {
+	ul.grt-menu li a {
+		font-size:18px;
+			margin-top:0px ;
+	}
+}
+
+/*only for Mobile */
+@media (max-width:767px) {
+
+	.nav-menu {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.grt-mobile-button {
+		display:inline-block;
+		position:absolute;
+		right:20px;
+		top:20px;
+	color:#3d3d3d;
+		cursor:pointer;
+		border: 0;
+		width:35px;
+	}
+
+	.grt-mobile-button .line1,  .grt-mobile-button .line3 {
+		width: 35px;
+		height: 4px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+		display:block;
+		margin-left: 15px;
+	}
+
+	ul.grt-menu {
+		display:none;
+
+	}  
+
+
+
+	ul.open-grt-menu {
+		position: fixed;
+		background: #FFF;
+		width: 100%;
+		left: 0;
+		right: 0;
+		top: 62px;
+		height:100%;
+		float: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		z-index: 9999;
+	}
+
+
+	.grt-mobile-button-open {
+		position: fixed;
+		z-index:99999;
+		right:25px;
+		top:25px;
+	}
+
+	.grt-mobile-button-open .line1 {
+		transform: rotate(-45deg) translate(-8px, 0px);
+	}
+
+   .grt-mobile-button-open .line3 {
+		transform: rotate(45deg) translate(-8px, 0px);
+	}
+
+
+	ul.grt-menu li a {
+		padding: 6px 10px;
+		font-size:30px;
+		text-decoration: none;
+		color:black;
+		text-align: center;
+
+	}
+
+
+
+	ul .grt-menu li {
+		width:100%;
+		position: relative;
+		display: block;
+		font-size: 17px;
+		line-height: 3.5em;
+	}
+
+
+
+}
+
+
+/* for banner */
+
+.banner{
+ 
+   background-color: black;
+    background-image:url("img/bannerimg.jpg");
+    background-size:100% 100%;
+    height:545px;
+    width:100%;
+    
+}
+
+.banner h2{
+	padding-top: 200px;
+  font-family: 'Aclonica';
+  font-size: 22px;
+}
+.banner .text-justify{
+	width:400px; 
+	margin-left: 340px; 
+
+}
+
+@media (min-width:990px) and (max-width:1200px) {
+ .banner .text-justify{
+	margin-left: 250px !important; 
+	
+}
+}
+
+@media (min-width:767px) and (max-width:992px) {
+ .banner .text-justify{
+	margin-left: 130px !important; 
+	
+}
+}
+
+@media (min-width:410px) and (max-width:724px) {
+ .banner .text-justify{
+	margin-left: 40px !important; 
+	
+}
+.banner h2{
+	padding-top: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:20px;
+}
+}
+
+@media (min-width:300px) and (max-width:413px) {
+ .banner .text-justify{
+	margin-left: 60px !important; 
+	margin-right: 10px;
+	font-size: 10px;
+	width:250px !important;
+}
+
+.banner h2{
+	padding-top: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:15px;
+}
+}	
+
+@media (min-width:409px) and (max-width:414px) {
+.banner .text-justify{
+	margin-left: 60px !important; 
+	margin-right: 10px;
+	font-size: 10px;
+	width:250px !important;
+}
+
+.banner h2{
+	padding-top: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:15px;
+}
+}
+
+
+
+@media (min-width:370px) and (max-width:408px) {
+.banner .text-justify{
+	margin-left: 40px !important; 
+	margin-right: 10px;
+	font-size: 10px;
+	width:200px !important;
+}
+
+.banner h2{
+	padding-top: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:15px;
+}
+}	
+
+@media (min-width:290px) and (max-width:375px) {
+.banner .text-justify{
+	margin-left: 70px !important; 
+	margin-right: 10px;
+	font-size: 10px;
+	width:200px !important;
+}
+
+.banner h2{
+	padding-top: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:15px;
+}
+}
+
+@media (min-width:200px) and (max-width:285px) {
+.banner .text-justify{
+	margin-left: 30px !important; 
+	margin-right: 10px;
+	font-size: 10px;
+	width:200px !important;
+}
+
+.banner h2{
+	padding-top: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:15px;
+}
+}
+/* engineering */
+.engineering{
+	padding-top: 100px;
+}
+
+.engineering .impact{
+	padding-top: 70px;
+}
+
+.engineering .text-justify{
+	margin-left: 20px;
+}
+
+.engineering .col-lg-4{
+	padding-top: 20px
+}
+
+@media (max-width:780px) {
+
+.engineering .impact{
+	padding-top: 10px!important;
+}
+
+.engineering .text-justify{
+font-size: 15px;
+}
+
+}
+
+@media (max-width:408px) {
+	.engineering .col-lg-6{
+	margin-top: 20px !important;
+}
+
+.engineering{
+	margin-top: 20px;
+}
+
+
+.engineering .text-justify{
+	margin-left: 10px;
+}
+}
+
+/* leadership team */
+.team{
+	margin-top: 60px;
+
+}
+
+@media (max-width:560px) {
+	.team .impact{
+		margin-top: 25px;
+	}
+}
+
+
+
+.team .card .body{
+	margin-left: 10px;
+}
+
+/* our people */
+
+.our-people .img-fluid{
+	width:600px;
+}
+
+
+/* our people */
+
+.feel-free{
+	padding-top: 60px;
+}
+
+/* footer */
+
+.footer{
+	margin-top: 60px;
+}
+
+@media (max-width:560px) {
+	.footer .right{
+		margin-top: 30px;
+	}
+}
+
+.bootom-menu li{
+	list-style-type: none;
+}
+
+.bootom-menu li a{
+color: grey;
+}
